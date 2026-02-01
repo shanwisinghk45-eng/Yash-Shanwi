@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For You, Always ❤️</title>
+  <style>
+    body {
+      background: linear-gradient(#ffe6ee, #fff);
+      font-family: 'Segoe UI', Arial, sans-serif;
+      text-align: center;
+      padding: 90px 20px;
+      color: #4d0026;
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+      max-width: 550px;
+      margin: auto;
+    }
+    button {
+      font-size: 18px;
+      padding: 14px 32px;
+      margin: 25px 10px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+    .yes {
+      background: #ff4d88;
+      color: white;
+      box-shadow: 0 8px 20px rgba(255,77,136,0.3);
+    }
+    .no {
+      background: #ddd;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Hey ❤️</h1>
+
+  <p>
+    I don’t know when it started…<br>
+    but somewhere between our conversations,<br>
+    your smile, and the way you understand me,<br>
+    you slowly became my safe place. 💕<br><br>
+
+    You make ordinary days feel special,<br>
+    and even silence with you feels warm.<br>
+    My heart feels calm when I think of you,<br>
+    like it knows where it belongs. 🤍
+  </p>
+
+  <h2 style="margin-top:40px;">So today, with all my feelings…</h2>
+
+  <h1>Will you be my Valentine? 🌹</h1>
+
+  <button class="yes" onclick="yes()">Yes ❤️</button>
+  <button class="no" id="no">No</button>
+
+  <script>
+    function yes() {
+      document.body.innerHTML = `
+        <h1>Thank you… ❤️</h1>
+        <p>
+          I promise to choose you on happy days,<br>
+          and hold you closer on hard ones.<br><br>
+
+          This isn’t just a Valentine question,<br>
+          it’s my heart choosing you —<br>
+          today, tomorrow, and always. 💖
+        </p>
+      `;
+    }
+
+    document.getElementById("no").onmouseover = function () {
+      this.style.position = "absolute";
+      this.style.left = Math.random() * 70 + "%";
+      this.style.top = Math.random() * 70 + "%";
+    };
+  </script>
+
+</body>
+</html>
